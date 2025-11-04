@@ -2,25 +2,17 @@
 
 
 
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
-
+import Navbar from "./Navbar";
 export default function AboutUs() {
   const [isLogin, setIsLogin] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#0B182B] text-white flex flex-col items-center">
       {/* Header */}
-      <header className="w-full flex justify-between items-center py-4 px-10 border-b border-gray-700 bg-[#0B182B]/90 backdrop-blur">
-        <div className="text-2xl font-bold">LOGO</div>
-        <nav className="space-x-6">
-          <a href="#" className="hover:text-cyan-400">ABOUT US</a>
-          <a href="#" className="hover:text-cyan-400">OUR SERVICES</a>
-          <a href="#" className="hover:text-cyan-400">WORK WITH US</a>
-          <a href="#" className="hover:text-cyan-400">BLOG</a>
-          <a href="#" className="hover:text-cyan-400">GET IN TOUCH</a>
-        </nav>
-      </header>
+      <Navbar/>
 
       {/* Hero Section */}
       <section
