@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 export default function AboutUs() {
   const [isLogin, setIsLogin] = useState(false);
 
   return (
+    
     <div className="min-h-screen bg-[#0B182B] text-white flex flex-col items-center">
       {/* Header */}
       <Navbar/>
@@ -172,8 +174,13 @@ export default function AboutUs() {
                 
             </div>
           </div>
+          
         </div>
+        
       </section>
+      
     </div>
+    
+    
   );
 }

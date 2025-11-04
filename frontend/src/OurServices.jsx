@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Footer from "./Footer";
 import { ArrowRight } from 'lucide-react'; 
 
 const features = [
@@ -37,11 +38,11 @@ export default function OurServices() {
             "url('image/image 799.png')", 
         }}
       >
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-64px)] py-12 px-4 md:px-8 lg:px-16">
+      <main className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-64px)] py-12 px-4 md:px-8 lg:px-16 ml-20">
         
 
-        <div className="text-center mb-16 mt-8">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-cyan-400 drop-shadow-lg mb-2">
+        <div className="text-center mb-16 mt-8 ">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-cyan-400 drop-shadow-lg mb-2 ">
             HELLO, USER!!
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 font-medium">
@@ -85,14 +86,19 @@ export default function OurServices() {
                 
                 transition-all duration-200
               ">
-                <ArrowRight className="w-8 h-20 text-white" />
+                <ArrowRight className=" text-white scale-200" />
               </button>
             </div>
           ))}
         </div>
+        <Footer/>
       </main>
+      
       </section>
-      </div> 
+      
+      </div>
     </div>
+      
+
   );
 }
